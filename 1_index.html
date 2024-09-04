@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="2_style.css">
+</head>
+<body>
+     
+    <div class="wrapper">
+
+        <!-- heading section-->
+
+        <h1>WEATHER APP</h1>
+
+        <!-- switch section -->
+
+        <section class="tabSection">
+
+            <p class="tab" data-userWeather>your Weather</p>
+            <p class="tab" data-searchWeather>search Weather</p>
+
+        </section>
+
+        <!-- weather container -->
+
+        <div class="WeatherSection">
+
+            <!-- granthLocation -->
+
+            <div class="grantLocation">
+
+                <img src="location.png" alt="location" height="80" width="80" loading="lazy">
+                <p>Grant Location Access</p>
+                <p>Allow Access To Get weather Information</p>
+                <button data-grantAccessButton>Grant Access</button>
+
+            </div>
+
+            <!-- search section -->
+
+            <form class="seachForm" data-searchForm>
+
+                <input placeholder="Search For City.." data-searchInput>
+                <button type="submit">
+                    <img src="search.png" alt="search" height="20" width="20">
+                </button>
+
+            </form>
+
+            <!-- LoadingSection -->
+
+            <div class="LoadingSection">
+
+                <img src="loading.gif" alt="loading" height="80" width="80" loading="lazy">
+                <p>Loading</p>
+
+            </div>
+
+            <!-- informationSection -->
+
+            <div class="userinformationSection">
+
+                <!-- city name and country flag -->
+
+                <div class="userinfo">
+                    <p data-userPlace></p>
+                    <img data-countryFlag>
+                </div>
+
+                <!-- weather Description -->
+
+                <p data-weatherDescription></p>
+
+                <!-- weather icon -->
+
+                <img data-weatherIcon>
+
+                <!-- weatherTemperrature -->
+
+                <p data-weatherTemperature></p>
+
+                <!-- 3 cards  -->
+
+                <div class="parameter-Section">
+                    
+                    <!-- card 1 -->
+
+                    <div class="parameter">
+                        <img src="wind.png">
+                        <p>WINDSPEED</p>
+                        <p data-windSpeed></p>
+                    </div>
+
+                    <!-- card 2 -->
+
+                    <div class="parameter">
+                        <img src="humidity.png">
+                        <p>HUMIDITY</p>
+                        <p data-humidity></p>
+                    </div>
+
+                    <!-- card 3 -->
+
+                    <div class="parameter">
+                        <img src="cloud.png">
+                        <p>CLOUDS</p>
+                        <p data-clouds></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="3_script.js"></script>
+</body>
+</html>
